@@ -54,6 +54,7 @@ public class Schema extends SQLiteOpenHelper {
 			case 1: {
 				v1(db);
 			}
+			// Fallthrough intended!
 			case 2: {
 				v2(db);
 			}

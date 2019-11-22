@@ -146,6 +146,7 @@ public class MainActivity extends ListActivity implements
 					}
 				}
 			}
+			// Fallthrough to copy!
 			case R.id.copy: {
 				if (!isNothingSelected()) {
 					ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);

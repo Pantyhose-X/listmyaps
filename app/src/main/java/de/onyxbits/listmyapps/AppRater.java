@@ -109,8 +109,8 @@ class AppRater implements DialogInterface.OnClickListener {
 				catch (ActivityNotFoundException exp) {
 
 				}
-				// Fall through intended!
 			}
+			// Fall through intended!
 			case DialogInterface.BUTTON_NEGATIVE: {
 				editor.putBoolean("dontshowagain", true);
 				break;
