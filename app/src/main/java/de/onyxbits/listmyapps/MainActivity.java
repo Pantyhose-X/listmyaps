@@ -360,21 +360,21 @@ public class MainActivity extends ListActivity implements
 	 */
 	public static String createSourceLink(String installer, String packname) {
 		if (installer == null) {
-			return "https://www.google.com/search?q=" + packname;
+			return "https://duck.com/?q=" + packname;
 		}
-		if (installer.startsWith("com.google")) {
-			return "https://play.google.com/store/apps/details?id=" + packname;
+		if (installer.equals("com.google.android.packageinstaller")) {
+			return "https://duck.com/?q=" + packname;
 		}
-		if (installer.startsWith("com.android")) {
+		if (installer.equals("com.android.vending")) {
 			return "https://play.google.com/store/apps/details?id=" + packname;
 		}
 		if (installer.startsWith("org.fdroid")) {
 			return "https://f-droid.org/repository/browse/?fdid=" + packname;
 		}
 		if (installer.startsWith("com.amazon")) {
-			return "http://www.amazon.com/gp/mas/dl/android?p=" + packname;
+			return "https://www.amazon.com/s?i=mobile-apps&k=" + packname;
 		}
-		return "https://www.google.com/search?q=" + packname;
+		return "https://duck.com/?q=" + packname;
 	}
 
 	@Override
