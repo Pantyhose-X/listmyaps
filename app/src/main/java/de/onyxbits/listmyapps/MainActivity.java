@@ -360,10 +360,10 @@ public class MainActivity extends ListActivity implements
 	 */
 	public static String createSourceLink(String installer, String packname) {
 		if (installer == null) {
-			return "https://duck.com/?q=" + packname;
+			return "https://search.brave.com/search?q=" + packname;
 		}
 		if (installer.equals("com.google.android.packageinstaller")) {
-			return "https://duck.com/?q=" + packname;
+			return "https://search.brave.com/search?q=" + packname;
 		}
 		if (installer.equals("com.android.vending")) {
 			return "https://play.google.com/store/apps/details?id=" + packname;
@@ -374,7 +374,7 @@ public class MainActivity extends ListActivity implements
 		if (installer.startsWith("com.amazon")) {
 			return "https://www.amazon.com/s?i=mobile-apps&k=" + packname;
 		}
-		return "https://duck.com/?q=" + packname;
+		return "https://search.brave.com/search?q=" + packname;
 	}
 
 	@Override
